@@ -1,0 +1,24 @@
+<!-- src/app/weather/weather.component.html -->
+<div>
+  <h2>Météo d'une ville</h2>
+
+  <!-- Sélectionner une ville -->
+  <label for="city">Choisissez une ville:</label>
+  <select id="city" [(ngModel)]="city" (change)="onCityChange()">
+    <option *ngFor="let city of cities" [value]="city">{{ city }}</option>
+  </select>
+
+  <!-- Affichage des données météo -->
+  <div *ngIf="weatherData">
+    <h3>La météo à {{ weatherData.name }} ({{ weatherData.sys.country }})</h3>
+    <p>Température: {{ weatherData.main.temp }}°C</p>
+    <p>Humidité: {{ weatherData.main.humidity }}%</p>
+    <p>Conditions: {{ weatherData.weather[0].description }}</p>
+    <p>Vent: {{ weatherData.wind.speed }} m/s</p>
+  </div>
+
+  <!-- Message d'erreur -->
+  <div *ngIf="!weatherData">
+    <p>Chargement des données météo...</p>
+  </div>
+</div>

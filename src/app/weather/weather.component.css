@@ -1,0 +1,85 @@
+/* src/app/weather/weather.component.css */
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: 200px;
+  }
+  
+  select:focus {
+    border-color: #3498db;
+  }
+  
+  div {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin: 5px 0;
+  }
+  
+  p:first-child {
+    font-weight: bold;
+  }
+  
+  p:nth-child(2) {
+    color: #27ae60; /* Color for humidity */
+  }
+  
+  p:nth-child(3) {
+    color: #f39c12; /* Color for weather conditions */
+  }
+  
+  p:nth-child(4) {
+    color: #2980b9; /* Color for wind speed */
+  }
+  
+  div p {
+    text-align: left;
+  }
+  
+  div p:last-child {
+    font-style: italic;
+  }
+  
+  div * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style for the "loading" message */
+  div p {
+    font-size: 1rem;
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
